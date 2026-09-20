@@ -242,3 +242,152 @@ hr.small {
 footer {
     padding: 100px 0;
 }
+
+
+/* ============================================
+   Partie du CSS personnalisé 
+   Palette sobre, minimaliste, une seule section
+   en rose pâle plein (Parcours) ; ailleurs, le
+   rose n'est qu'une touche (icônes, liens, bordures)
+   ============================================ */
+
+:root {
+    --blush: #f4c9d6;
+    --blush-dark: #e39cb3;
+    --blush-pale: #fdf3f6;
+    --ink: #2d2d2d;
+    --muted: #6b6b6b;
+}
+
+body {
+    color: var(--ink);
+}
+
+section h2,
+aside h2 {
+    font-weight: 700;
+}
+
+.header {
+    background: linear-gradient(180deg, #ffffff 0%, var(--blush-pale) 100%);
+}
+
+.header h1,
+.header h3 {
+    color: var(--ink);
+}
+
+.header-tagline {
+    max-width: 560px;
+    margin: 15px auto 20px;
+}
+
+.header-links {
+    margin: 0;
+}
+
+.header-links li {
+    margin: 0 12px;
+}
+
+.header-links a {
+    color: var(--ink);
+    font-weight: 600;
+}
+
+.header-links a:hover {
+    color: var(--blush-dark);
+}
+
+.callout {
+    height: auto;
+    min-height: 320px;
+    padding: 60px 0;
+    color: var(--ink);
+    background: var(--blush);
+}
+
+.callout h2 {
+    margin-bottom: 10px;
+}
+
+.parcours-row {
+    margin-top: 30px;
+}
+
+.parcours-row i {
+    color: var(--blush-dark);
+    margin-bottom: 10px;
+}
+
+.parcours-row h4 {
+    font-weight: 700;
+    margin: 10px 0 5px;
+}
+
+.services .text-primary {
+    color: var(--blush-dark) !important;
+}
+
+.projets-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .projets-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .portfolio-item-wide {
+        grid-column: 1 / -1;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+.portfolio-item {
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.portfolio-item h4 {
+    font-weight: 700;
+}
+
+.portfolio-item .objectif {
+    font-size: 0.95em;
+}
+
+.portfolio-item .btn-dark {
+    background-color: var(--ink);
+}
+
+.call-to-action {
+    background-color: #faf8f9;
+}
+
+.experience-item {
+    padding: 10px 0;
+}
+
+.experience-item h4 {
+    font-weight: 700;
+}
+
+.languages-line {
+    margin-top: 20px;
+    color: var(--muted);
+}
+
+a {
+    color: var(--blush-dark);
+}
+
+a:hover,
+a:focus {
+    color: var(--ink);
+}
