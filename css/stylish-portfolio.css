@@ -242,10 +242,8 @@ hr.small {
 footer {
     padding: 100px 0;
 }
-
-
 /* ============================================
-   Partie du CSS personnalisé 
+   Personnalisation — portfolio Samaa A. Kouyele
    Palette sobre, minimaliste, une seule section
    en rose pâle plein (Parcours) ; ailleurs, le
    rose n'est qu'une touche (icônes, liens, bordures)
@@ -268,6 +266,7 @@ aside h2 {
     font-weight: 700;
 }
 
+/* Header : fond blanc, très légère touche rose en dégradé bas */
 .header {
     background: linear-gradient(180deg, #ffffff 0%, var(--blush-pale) 100%);
 }
@@ -299,6 +298,7 @@ aside h2 {
     color: var(--blush-dark);
 }
 
+/* Parcours (ex-callout) : seule section en rose plein du site */
 .callout {
     height: auto;
     min-height: 320px;
@@ -325,33 +325,17 @@ aside h2 {
     margin: 10px 0 5px;
 }
 
+/* Compétences : fond blanc, icônes en touche rose */
 .services .text-primary {
     color: var(--blush-dark) !important;
 }
 
-.projets-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-    margin-top: 30px;
-    text-align: left;
-}
-
-@media (min-width: 768px) {
-    .projets-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-    .portfolio-item-wide {
-        grid-column: 1 / -1;
-        max-width: 600px;
-        margin: 0 auto;
-    }
-}
-
+/* Projets : cartes texte sobres */
 .portfolio-item {
     padding: 20px;
     border: 1px solid #eee;
     border-radius: 4px;
+    height: 100%;
 }
 
 .portfolio-item h4 {
@@ -366,6 +350,7 @@ aside h2 {
     background-color: var(--ink);
 }
 
+/* Expériences : fond gris très clair pour se distinguer du blanc environnant */
 .call-to-action {
     background-color: #faf8f9;
 }
@@ -378,11 +363,13 @@ aside h2 {
     font-weight: 700;
 }
 
+/* Compétences : ligne Langues, discrète */
 .languages-line {
     margin-top: 20px;
     color: var(--muted);
 }
 
+/* Liens généraux discrets, teinte rose pâle */
 a {
     color: var(--blush-dark);
 }
